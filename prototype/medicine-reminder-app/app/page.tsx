@@ -15,8 +15,7 @@ export default function Home() {
   }
 
   return (
-    <div className="flex justify-center items-center min-h-screen bg-white">
-      {/* Remove phone frame and status bar simulation */}
+    <div className="h-full w-full flex">
       <div className="w-full h-full">
         {currentScreen === "welcome" && <Welcome navigateTo={navigateTo} />}
         {currentScreen === "signup" && <SignUp navigateTo={navigateTo} />}
